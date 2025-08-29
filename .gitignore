@@ -1,0 +1,28 @@
+# создаём .gitignore (Python + PyCharm)
+cat > .gitignore << 'EOF'
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+*.egg
+*.log
+
+venv/
+env/
+.venv/
+
+.ipynb_checkpoints/
+.pytest_cache/
+
+.idea/
+*.iml
+
+.DS_Store
+.vscode/
+EOF
+
+echo "# HillelPython" > README.md
+
+git add .gitignore README.md
+git commit -m "Initial commit: README + .gitignore"
