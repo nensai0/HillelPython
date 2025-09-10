@@ -19,6 +19,6 @@ while True:
 
     choice = input("Бажаєте продовжити? (y/n): ").lower()
 
-    if choice != 'y':
+    if choice != 'y' and choice != 'yes':
         print("Роботу калькулятора завершено.")
         break
